@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090a0b">
+  <title>Suri.AI — Sign In</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="signin">
+  <header class="nav" aria-label="Main navigation">
+    <a href="about.html" data-page="about">ABOUT US</a>
+    <a href="contact.html" data-page="contact">CONTACT US</a>
+    <a href="news.html" data-page="news">NEWS</a>
+    <a class="brand" href="index.html" data-page="index">SURI.AI</a>
+    <a href="course.html" data-page="course">COURSE</a>
+    <div class="nav-slot">
+      <a href="signin.html" data-page="signin" id="signinLink">SIGN IN</a>
+      <div class="nav-account" id="navAccount" hidden>
+        <button class="avatar-btn" id="avatarBtn" type="button" aria-haspopup="true" aria-expanded="false"></button>
+        <div class="account-menu" id="accountMenu">
+          <a href="dashboard.html" data-page="dashboard">Dashboard</a>
+          <button type="button" id="logoutBtn">Log out</button>
+        </div>
+      </div>
+    </div>
+    <button class="menu" type="button" aria-expanded="false">MENU</button>
+  </header>
+
+  <main>
+    <section class="screen auth-screen signin-screen">
+      <div class="auth-card signin-card">
+        <aside class="signin-aside">
+          <div class="signin-logo"></div><h3>Suri.AI</h3><p>Fact-checking powered by deep learning</p>
+          <ul><li>✓ Real-time fact verification</li><li>✓ Sub-50ms response time</li><li>✓ Enterprise-grade security</li></ul>
+        </aside>
+        <form class="auth-form signin-form" id="signinForm">
+          <h2>Welcome Back!</h2><p>Sign in to your account to continue</p>
+          <label>Username or email<input required></label>
+          <label>Password<input type="password" required></label>
+          <a class="forgot" href="#">forgot password?</a>
+          <button class="primary-auth" type="submit">Sign in</button>
+          <div class="divider">or continue with</div>
+          <div class="social"><button type="button">Continue with Google</button><button type="button">Continue with Apple</button></div>
+          <p class="switch">Don't have an account? <a href="register.html">Register here</a></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

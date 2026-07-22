@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090a0b">
+  <title>Suri.AI — Course</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="course">
+  <header class="nav" aria-label="Main navigation">
+    <a href="about.html" data-page="about">ABOUT US</a>
+    <a href="contact.html" data-page="contact">CONTACT US</a>
+    <a href="news.html" data-page="news">NEWS</a>
+    <a class="brand" href="index.html" data-page="index">SURI.AI</a>
+    <a href="course.html" data-page="course">COURSE</a>
+    <div class="nav-slot">
+      <a href="signin.html" data-page="signin" id="signinLink">SIGN IN</a>
+      <div class="nav-account" id="navAccount" hidden>
+        <button class="avatar-btn" id="avatarBtn" type="button" aria-haspopup="true" aria-expanded="false"></button>
+        <div class="account-menu" id="accountMenu">
+          <a href="dashboard.html" data-page="dashboard">Dashboard</a>
+          <button type="button" id="logoutBtn">Log out</button>
+        </div>
+      </div>
+    </div>
+    <button class="menu" type="button" aria-expanded="false">MENU</button>
+  </header>
+
+  <main>
+    <section class="screen course-screen">
+      <div class="course-inner">
+        <p class="eyebrow">SURI.AI LEARNING COURSE</p>
+        <h2>Learn how to spot<br>what doesn't add up.</h2>
+        <div class="course-grid">
+          <article><b>01</b><h3>Check the source</h3><p>Learn how authors, publishers, dates, and original evidence affect credibility.</p></article>
+          <article><b>02</b><h3>Read beyond headlines</h3><p>Identify emotional framing, missing context, and claims that overstate the facts.</p></article>
+          <article><b>03</b><h3>Cross-check evidence</h3><p>Compare reliable reports before deciding whether information is safe to share.</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090a0b">
+  <title>Suri.AI — News Check</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="news">
+  <header class="nav" aria-label="Main navigation">
+    <a href="about.html" data-page="about">ABOUT US</a>
+    <a href="contact.html" data-page="contact">CONTACT US</a>
+    <a href="news.html" data-page="news">NEWS</a>
+    <a class="brand" href="index.html" data-page="index">SURI.AI</a>
+    <a href="course.html" data-page="course">COURSE</a>
+    <div class="nav-slot">
+      <a href="signin.html" data-page="signin" id="signinLink">SIGN IN</a>
+      <div class="nav-account" id="navAccount" hidden>
+        <button class="avatar-btn" id="avatarBtn" type="button" aria-haspopup="true" aria-expanded="false"></button>
+        <div class="account-menu" id="accountMenu">
+          <a href="dashboard.html" data-page="dashboard">Dashboard</a>
+          <button type="button" id="logoutBtn">Log out</button>
+        </div>
+      </div>
+    </div>
+    <button class="menu" type="button" aria-expanded="false">MENU</button>
+  </header>
+
+  <main>
+    <section class="screen main-screen">
+      <div class="search-block">
+        <h2>Need any help?</h2>
+        <form class="search" id="searchForm">
+          <button class="add" type="button" aria-label="Add article">＋</button>
+          <input id="searchInput" aria-label="Article or news claim" placeholder="Paste article or search news check">
+          <button class="mic" type="button" aria-label="Use microphone">♩</button>
+          <button class="magnify" type="submit" aria-label="Search"></button>
+        </form>
+        <p class="status" id="searchStatus" aria-live="polite"></p>
+
+        <div class="result-card" id="resultCard" hidden aria-live="polite">
+          <div class="result-top">
+            <span class="verdict-badge" id="verdictBadge">Uncertain</span>
+            <span class="confidence-text" id="confidenceText">0% confidence</span>
+          </div>
+          <div class="confidence-bar"><span id="confidenceFill"></span></div>
+          <p class="result-explanation" id="resultExplanation"></p>
+          <p class="result-meta" id="resultMeta"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090a0b">
+  <title>Suri.AI — Contact Us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="contact">
+  <header class="nav" aria-label="Main navigation">
+    <a href="about.html" data-page="about">ABOUT US</a>
+    <a href="contact.html" data-page="contact">CONTACT US</a>
+    <a href="news.html" data-page="news">NEWS</a>
+    <a class="brand" href="index.html" data-page="index">SURI.AI</a>
+    <a href="course.html" data-page="course">COURSE</a>
+    <div class="nav-slot">
+      <a href="signin.html" data-page="signin" id="signinLink">SIGN IN</a>
+      <div class="nav-account" id="navAccount" hidden>
+        <button class="avatar-btn" id="avatarBtn" type="button" aria-haspopup="true" aria-expanded="false"></button>
+        <div class="account-menu" id="accountMenu">
+          <a href="dashboard.html" data-page="dashboard">Dashboard</a>
+          <button type="button" id="logoutBtn">Log out</button>
+        </div>
+      </div>
+    </div>
+    <button class="menu" type="button" aria-expanded="false">MENU</button>
+  </header>
+
+  <main>
+    <section class="screen contact-screen">
+      <div class="contact-info">
+        <h2>GET IN<br>TOUCH.</h2>
+        <p>Have a question or need help? Send us a message<br>and we'll get back to you within 24 hours.</p>
+        <ul>
+          <li><i></i><span><small>Email</small><b>hello@suri.ai</b></span></li>
+          <li><i></i><span><small>Phone</small><b>+63 (2) 8XXX XXXX</b></span></li>
+          <li><i></i><span><small>Live chat</small><b>9AM – 6PM PHT</b></span></li>
+        </ul>
+      </div>
+      <form class="contact-card" id="contactForm">
+        <h3>Send Us a Message</h3><p>Your opinion matters. Tell us your concerns so we can assist you.</p>
+        <div class="row"><label>First name<input required></label><label>Last Name<input required></label></div>
+        <label>Email address<input type="email" required></label>
+        <label>Subject<input required></label>
+        <label>Message<textarea placeholder="Tell us how we can help you..." required></textarea></label>
+        <button type="submit">Send Message</button><output id="contactStatus"></output>
+      </form>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

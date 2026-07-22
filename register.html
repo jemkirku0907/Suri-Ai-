@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090a0b">
+  <title>Suri.AI — Register</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="register">
+  <header class="nav" aria-label="Main navigation">
+    <a href="about.html" data-page="about">ABOUT US</a>
+    <a href="contact.html" data-page="contact">CONTACT US</a>
+    <a href="news.html" data-page="news">NEWS</a>
+    <a class="brand" href="index.html" data-page="index">SURI.AI</a>
+    <a href="course.html" data-page="course">COURSE</a>
+    <div class="nav-slot">
+      <a href="signin.html" data-page="signin" id="signinLink">SIGN IN</a>
+      <div class="nav-account" id="navAccount" hidden>
+        <button class="avatar-btn" id="avatarBtn" type="button" aria-haspopup="true" aria-expanded="false"></button>
+        <div class="account-menu" id="accountMenu">
+          <a href="dashboard.html" data-page="dashboard">Dashboard</a>
+          <button type="button" id="logoutBtn">Log out</button>
+        </div>
+      </div>
+    </div>
+    <button class="menu" type="button" aria-expanded="false">MENU</button>
+  </header>
+
+  <main>
+    <section class="screen auth-screen register-screen">
+      <div class="auth-card register-card">
+        <aside class="auth-aside">
+          <div class="logo-box"></div><b>Suri.AI</b>
+          <h3>Create your account in<br>two steps</h3>
+          <p>Join thousands of teams using Suri.AI to verify information in real time.</p>
+          <div class="steps">
+            <span class="current"><i>1</i><b>Personal info</b><small>Name, email, phone &amp; credentials</small></span>
+            <span><i>2</i><b>Verify &amp; finish</b><small>Email verification &amp; preferences</small></span>
+          </div>
+          <div class="secure">✓ SSL secured &amp; GDPR compliant.</div>
+        </aside>
+        <form class="auth-form" id="registerForm">
+          <h2>Tell us about yourself</h2><p>All fields are required to create your account.</p>
+          <div class="form-grid">
+            <label>First name<input required></label>
+            <label>Last name<input required></label>
+            <label class="wide">Username<input required></label>
+            <label class="wide">Email address<input type="email" required></label>
+            <label class="wide">Phone number<input placeholder="PH +63" required></label>
+            <label>Password<input type="password" required></label>
+            <label>Confirm password<input type="password" required></label>
+          </div>
+          <label class="terms"><input type="checkbox" required> I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a> of Suri.AI.</label>
+          <div class="form-actions"><button type="button" onclick="history.back()">&lt; Go Back</button><button type="submit">Continue to Step 2 &gt;</button></div>
+          <p class="switch">Already have an account? <a href="signin.html">Sign in here</a></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
